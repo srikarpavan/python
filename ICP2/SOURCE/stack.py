@@ -1,0 +1,10 @@
+stack = ["srikar" ,"pavan" ,"kumar"]
+print(stack)
+print("appending two names")
+stack.append("tarun")
+stack.append("lakshman")
+print(stack)
+print("popping a name from stack:",stack.pop())
+print(stack)
+print("popping a name from stack:",stack.pop())
+print(stack)

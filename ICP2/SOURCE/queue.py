@@ -1,0 +1,10 @@
+queue =["srikar" ,"pavan" ,"kumar"]
+print(queue)
+print("appending two names:")
+queue.append("tarun")
+queue.append("lakshman")
+print(queue)
+print("popping names:")
+print(queue.pop())
+print(queue.pop())
+print(queue)
