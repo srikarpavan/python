@@ -7,4 +7,4 @@ for i in data:
         letters =letters+1     # storing that word in the letters
 
 print("the number of numbers ",numbers)                # printing numbers
-print("the number of letters",letters)                 # printing letters
+print("the number of letters",letters)                 # printing lettersSS
