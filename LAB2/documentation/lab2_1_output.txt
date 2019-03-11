@@ -1,0 +1,199 @@
+C:\Users\pavan\OneDrive\Documents\python\venv\Scripts\python.exe C:/Users/pavan/OneDrive/Documents/GitHub/python/LAB2/source/lab2_1.py
+Train_Set
+   PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
+0            1         0       3  ...   7.2500   NaN         S
+1            2         1       1  ...  71.2833   C85         C
+2            3         1       3  ...   7.9250   NaN         S
+3            4         1       1  ...  53.1000  C123         S
+4            5         0       3  ...   8.0500   NaN         S
+
+[5 rows x 12 columns]
+
+
+['PassengerId' 'Survived' 'Pclass' 'Name' 'Sex' 'Age' 'SibSp' 'Parch'
+ 'Ticket' 'Fare' 'Cabin' 'Embarked']
+
+
+NULL values in the train 
+PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age            177
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+dtype: int64
+
+
+PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age              0
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+dtype: int64
+
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 12 columns):
+PassengerId    891 non-null int64
+Survived       891 non-null int64
+Pclass         891 non-null int64
+Name           891 non-null object
+Sex            891 non-null object
+Age            891 non-null float64
+SibSp          891 non-null int64
+Parch          891 non-null int64
+Ticket         891 non-null object
+Fare           891 non-null float64
+Cabin          204 non-null object
+Embarked       889 non-null object
+dtypes: float64(2), int64(5), object(5)
+memory usage: 83.6+ KB
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 8 columns):
+PassengerId    891 non-null int64
+Survived       891 non-null int64
+Pclass         891 non-null int64
+Sex            891 non-null int32
+Age            891 non-null float64
+SibSp          891 non-null int64
+Parch          891 non-null int64
+Fare           891 non-null float64
+dtypes: float64(2), int32(1), int64(5)
+memory usage: 52.3 KB
+   PassengerId  Survived  Pclass  Sex   Age  SibSp  Parch     Fare
+0            1         0       3    1  22.0      1      0   7.2500
+1            2         1       1    0  38.0      1      0  71.2833
+2            3         1       3    0  26.0      0      0   7.9250
+3            4         1       1    0  35.0      1      0  53.1000
+4            5         0       3    1  35.0      0      0   8.0500
+
+
+0      0
+1      1
+2      1
+3      1
+4      0
+5      0
+6      0
+7      0
+8      1
+9      1
+10     1
+11     1
+12     0
+13     0
+14     0
+15     1
+16     0
+17     1
+18     0
+19     1
+20     0
+21     1
+22     1
+23     1
+24     0
+25     1
+26     0
+27     0
+28     1
+29     0
+      ..
+861    0
+862    1
+863    0
+864    0
+865    1
+866    1
+867    0
+868    0
+869    1
+870    0
+871    1
+872    0
+873    0
+874    1
+875    1
+876    0
+877    0
+878    0
+879    1
+880    1
+881    0
+882    0
+883    0
+884    0
+885    0
+886    0
+887    1
+888    0
+889    1
+890    0
+Name: Survived, Length: 891, dtype: int64
+[0 0 1 1 0 0 0 0 0 1 0 1 0 0 0 1 0 1 0 1 0 1 1 1 0 1 0 0 0 0 0 0 1 0 0 0 1
+ 0 0 0 0 0 0 1 1 0 0 1 0 0 0 0 1 1 0 0 1 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0 0 0
+ 1 0 0 0 1 0 0 1 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 1 0 1 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 1 0
+ 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ 0 1 1 0 0 1 0 1 0 1 1 1 0 1 0 0 0 0 0 0 0 0 1 1 1 0 1 0 0 0 0 1 0 1 0 1 0
+ 0 0 1 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 1 1
+ 1 0 1 0 0 0 0 0 0 1 1 0 1 1 0 1 1 0 0 0 0 0 0 0 0 0 0 1 0 1 1 1 1 0 0 0 0
+ 0 0 0 0 1 0 0 1 0 1 0 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 1 0 1 0 1 1 1 1 0 0
+ 0 1 0 0 1 1 0 1 1 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 1 1 1
+ 1 0 0 0 0 1 1 0 0 0 0 1 0 1 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 0 1 0 0 0 0 0 0
+ 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 1 0 1 0 0 0 0 0 1
+ 1 1 1 0 1 1 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 1 0 0 1 1 0 0 0 0 0 1 0
+ 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 1 1 1 1 0 0 0 0 0
+ 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 1 1 0 0 1 0 0 1 1 0 1 1 0 0 1 1
+ 0 1 0 1 1 0 0 0 0 0 0 0 0 0 1 0 1 1 1 0 0 1 1 0 1 0 1 0 0 0 1 0 0 0 0 0 1
+ 0 0 0 0 0 0 0 1 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 1 0 0 1 1 0 0 0 0 0 0
+ 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 1 0 1 0 0 0 0 0 0 1 0 0 0 1 0
+ 0 0 0 1 1 1 0 1 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 1 0 0 0 1 0
+ 0 0 0 1 1 0 1 1 0 0 0 0 0 1 1 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0
+ 0 0 0 0 1 0 0 1 0 0 0 1 0 0 1 1 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0 0
+ 1 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 0 0 0 0
+ 0 0 0 0 0 0 1 1 0 1 0 0 0 1 1 1 1 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0
+ 0 0 1 0 1 1 1 1 0 0 0 1 0 0 1 1 0 0 1 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0
+ 0 1 0]
+[[544   5]
+ [ 84 258]]
+              precision    recall  f1-score   support
+
+           0       0.87      0.99      0.92       549
+           1       0.98      0.75      0.85       342
+
+   micro avg       0.90      0.90      0.90       891
+   macro avg       0.92      0.87      0.89       891
+weighted avg       0.91      0.90      0.90       891
+
+Accuracy of SVM classifier : 0.61
+              precision    recall  f1-score   support
+
+           0       0.82      0.85      0.83       549
+           1       0.74      0.71      0.72       342
+
+   micro avg       0.79      0.79      0.79       891
+   macro avg       0.78      0.78      0.78       891
+weighted avg       0.79      0.79      0.79       891
+
+[[465  84]
+ [100 242]]
+accuracy using Gaussian navie bayes Model is  79.3296089385475
+accuracy using knn Model is  0.7530864197530864
+
+Process finished with exit code 0
